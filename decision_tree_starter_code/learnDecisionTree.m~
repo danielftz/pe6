@@ -84,18 +84,15 @@ function tree = learnDecisionTree(examples, attributes, default)
     labels = examples(:, end);
     
     % <ENTER YOUR CODE HERE>
-    if num_examples == 0
-        return 
-    
-    elseif sum(diff(labels)) == 0
-        leaf_node = struct(
-    
+    if sum(diff(labels)) == 0
+        
+    end
     %% 2. If attributes is empty, create a leaf node with the
     %      majority classification and return.
-    
-    % <ENTER YOUR CODE HERE>
     elseif labels 
-    
+    end
+    % <ENTER YOUR CODE HERE>
+   
     
     %% 3. Find the best attribute -- the attribute with the lowest uncertainty
     % <ENTER YOUR CODE HERE>
@@ -111,7 +108,7 @@ function tree = learnDecisionTree(examples, attributes, default)
     %              all attributes but the best
     %              the majority value of the examples
     %     c. add branch to tree with label vi and subtree
-    end
+ 
 end
 
 
@@ -138,12 +135,4 @@ end
 function en = entropy(p,n)
 %        <ENTER CODE HERE>
 
-end
-
-function rslt = LOG(a)
-    if a==0
-        rslt = 0;
-    else
-        rslt = log(a);
-    end
 end
